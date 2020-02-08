@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="StyleSheet1.css">
+
+    <script src="giftcard.js">
+
+        
+    </script>
+    <style rel="stylesheet" type="text/css">
+        .bg {
+            background-image: url("images/bgimage.jpg ");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .btn-primary {
+            background-color: #EF7B00;
+        }
+
+        table {
+            width: 180%;
+        }
+    </style>
+
+</head>
+<body class="bg" onload="loadItems()">
+    <header>
+        <!--Logo Transparent-->
+        <div class="row">
+            <div class="col-sm-5">
+
+                <img src="images/Logo.png" class="rounded-circle" alt="Not" style="width: 100px; height: 100px;">
+            </div>
+            <div class="col-sm-7 d-flex justify-content-start">
+
+                <img src="images/poster (2).png" alt="Not" style="width:300px; height: 100px;">
+            </div>
+        </div>
+
+
+        <!--Nav-bar-->
+        <nav class="navbar navbar-expand-lg navbar-light  bg-light">
+
+            <div class="col" id="navbarText">
+                <ul class="nav row nav-pills ">
+
+                    <li class="col-sm-3 nav-item text-center">
+                        <a class="nav-link btn-primary" href="index.html">Home </a>
+                    </li>
+                    <li class="col-sm-3 nav-item text-center">
+                        <a class="nav-link btn-primary" href="placeorder.html">Place gift card Orders</a>
+                    </li>
+                    <li class="col-sm-3 nav-item text-center">
+                        <a class="nav-link btn-primary" href="vieworder.html">View Gift Card Orders</a>
+                    </li>
+                    <li class="col-sm-3 nav-item text-center">
+                        <a class="nav-link btn-primary" href="Contactus.html">Contact Us</a>
+                    </li>
+
+                </ul>
+                <!-- <span class="navbar-text">
+                  Navbar text with an inline element
+                </span> -->
+            </div>
+
+        </nav>
+    </header>
+    <!--Side bar-->
+    <section>
+        <div class="row">
+            <aside class="col-3">
+
+                <ul class="nav flex-column">
+                    <li class="nav-item my-2 text-center">
+                        <a href="index.html" class="nav-link btn-primary">Home</a>
+                    </li>
+                    <li class="nav-item my-2 text-center">
+                        <a href="placeorder.html" class="nav-link btn-primary">Place Gift Card Orders</a>
+                    </li>
+                    <li class="nav-item my-2 text-center">
+                        <a href="vieworder.html" class="nav-link btn-primary">View Gift Card Orders</a>
+                    </li>
+                    <li class="nav-item my-2 text-center">
+                        <a href="Contactus.html" class="nav-link btn-primary">Contact Us</a>
+                    </li>
+                </ul>
+
+
+            </aside>
+
+            <div>
+
+                <table border="1">
+                    <tr>
+                        <th>S.No</th>
+                        <th>Buyers Name</th>
+                        <th>Shipping Address</th>
+                        <th>City</th>
+                        <th>Amount</th>
+                        <th>Phone</th>
+                    </tr>
+              <tbody id="ViewTable"></tbody>
+                </table>
+            </div>
+    </section>
+    </body>
+</html>
